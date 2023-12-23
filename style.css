@@ -49,8 +49,16 @@ input{
 }
 
 .ButtonCalc {
-    width: 60px;
+    width: min-content;
     cursor: pointer;
+    transition: all 200ms ease-in-out;
+}
+
+.ButtonCalc:hover {
+    background-color: burlywood;
+    transition: all 200ms ease-in-out;
+    color:  #fff;
+    letter-spacing: 1px;
 }
 
 .TituloChurras{
