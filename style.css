@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Inter:wght@100;400;500;700&family=Kanit:ital,wght@0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=Nunito+Sans:opsz@6..12&family=Open+Sans:wght@300;400;600&family=Poppins:wght@300;400;600;900&family=Roboto:ital,wght@0,100;0,400;1,300&family=Rubik:ital,wght@0,300;0,400;0,500;1,500&family=Salsa&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: antiquewhite;
+}
+
+.Container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+    gap: 20px;
+}
+
+.ParteCima{
+    box-shadow: 1px 1px 10px 2px rgba(128, 128, 128, 0.445);
+    background-color: rgb(71, 69, 71);
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+}
+
+.BoxChurras{
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input{
+    border: solid 1px gray;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.ButtonCalc {
+    width: 60px;
+    cursor: pointer;
+}
+
+.TituloChurras{
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.Logo{
+    width: 300px;
+}
+
+.Pessoas{
+    width: 500px;
+
+}
+
+.Resultados p{
+    margin-top: 10px;
+}
+
+@media (max-width: 730px){
+    .ParteCima{
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .Pessoas{
+        width: 350px;
+    }
+    
+}
+
+@media (max-width: 410px){
+    .ParteCima{
+        width: 90vw
+    }
+
+    .BoxChurras{
+        width: 80vw;
+    }
+
+    .Logo{
+        width: 80vw;
+    }
+
+    .Pessoas{
+        width: 80vw;
+    }
+}
+
+@media (max-width: 380px){
+    .TituloChurras{
+        font-size: 20px ;
+    }
+}
